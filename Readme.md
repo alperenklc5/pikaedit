@@ -4,6 +4,7 @@
 > [pikaedit.com](https://pikaedit.com) · [TR](https://pikaedit.com/tr) · [EN](https://pikaedit.com/en)
 
 ![Green Hosting](https://app.greenweb.org/api/v3/greencheckimage/pikaedit.com?nocache=true)
+[![Mozilla Observatory](https://img.shields.io/badge/Mozilla_Observatory-A%2B-brightgreen?style=flat&logo=mozilla)](https://observatory.mozilla.org/analyze/pikaedit.com)
 
 ---
 
