@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Left ear -->
+  <ellipse cx="9" cy="9" rx="3.5" ry="5" fill="#FBBF24" stroke="#374151" stroke-width="1.2"/>
+  <ellipse cx="9" cy="9.5" rx="1.8" ry="3" fill="#D97706"/>
+  <!-- Right ear -->
+  <ellipse cx="23" cy="9" rx="3.5" ry="5" fill="#FBBF24" stroke="#374151" stroke-width="1.2"/>
+  <ellipse cx="23" cy="9.5" rx="1.8" ry="3" fill="#D97706"/>
+  <!-- Head -->
+  <circle cx="16" cy="20" r="12" fill="#FBBF24" stroke="#374151" stroke-width="1.2"/>
+  <!-- Left eye — happy closed arc -->
+  <path d="M10 18 Q12.5 15 15 18" stroke="#1E293B" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  <!-- Right eye — happy closed arc -->
+  <path d="M17 18 Q19.5 15 22 18" stroke="#1E293B" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  <!-- Nose -->
+  <circle cx="16" cy="22" r="1" fill="#1E293B"/>
+  <!-- Smile -->
+  <path d="M12 24 Q16 28 20 24" stroke="#1E293B" stroke-width="1.2" stroke-linecap="round" fill="none"/>
+  <!-- Left cheek -->
+  <circle cx="9" cy="23" r="2.5" fill="#FB923C" opacity="0.45"/>
+  <!-- Right cheek -->
+  <circle cx="23" cy="23" r="2.5" fill="#FB923C" opacity="0.45"/>
+</svg>

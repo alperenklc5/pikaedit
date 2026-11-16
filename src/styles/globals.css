@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+  }
+}
+
+@keyframes indeterminate {
+  0%   { transform: translateX(-100%) scaleX(0.4); }
+  50%  { transform: translateX(0%)    scaleX(0.6); }
+  100% { transform: translateX(100%)  scaleX(0.4); }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+@layer components {
+  /* ── Layout ─────────────────────────────────────────────────────────────── */
+  .tool-container {
+    @apply max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-8;
+  }
+
+  /* ── Dot grid pattern — hero background ─────────────────────────────────── */
+  .dot-pattern {
+    background-image: radial-gradient(circle, #e2e8f0 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  /* ── Dropzone ───────────────────────────────────────────────────────────── */
+  .dropzone {
+    @apply border-2 border-dashed border-slate-300 rounded-2xl p-8
+           hover:border-pika-400 hover:bg-pika-50/50
+           transition-all duration-200 cursor-pointer
+           flex flex-col items-center justify-center gap-3
+           min-h-[240px];
+  }
+
+  .dropzone-active {
+    @apply border-pika-500 bg-pika-50;
+  }
+
+  /* ── Buttons ────────────────────────────────────────────────────────────── */
+  .btn-primary {
+    @apply bg-accent-600 hover:brightness-90 text-white
+           px-8 py-3.5 rounded-xl font-semibold text-base
+           transition-all duration-150
+           hover:scale-[1.02] hover:shadow-lg
+           disabled:opacity-50 disabled:cursor-not-allowed
+           disabled:hover:scale-100 disabled:hover:shadow-none
+           inline-flex items-center justify-center gap-2;
+  }
+
+  .btn-secondary {
+    @apply bg-white hover:bg-slate-50 text-slate-700
+           px-6 py-3 rounded-xl font-medium
+           transition-all duration-150
+           border border-slate-200 hover:border-slate-300
+           inline-flex items-center justify-center gap-2;
+  }
+
+  /* ── Privacy notice — left-border style, no green pill ─────────────────── */
+  .privacy-notice {
+    @apply border-l-4 border-pika-400 bg-pika-50/60
+           px-4 py-3 rounded-r-lg text-sm text-slate-600;
+  }
+
+  /* ── CV Builder — scale preview wrapper to fit container ───────────────── */
+  .cv-scale-wrapper {
+    transform-origin: top left;
+  }
+
+  /* Keep old .privacy-badge class alive so no page breaks */
+  .privacy-badge {
+    @apply inline-flex items-center gap-1.5 px-3 py-1
+           bg-pika-50 text-pika-700 text-sm font-medium
+           rounded-full border border-pika-200;
+  }
+
+  /* ── Category colour bars (used on tool cards) ──────────────────────────── */
+  .category-bar-pdf       { @apply bg-pika-400; }
+  .category-bar-image     { @apply bg-accent-500; }
+  .category-bar-developer { @apply bg-emerald-500; }
+  .category-bar-text      { @apply bg-sky-500; }
+  .category-bar-notes     { @apply bg-rose-400; }
+
+  /* ── Typography helpers ─────────────────────────────────────────────────── */
+  .hero-title {
+    @apply text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900;
+    line-height: 1.1;
+  }
+
+  .tool-title {
+    @apply text-3xl font-bold text-slate-900;
+  }
+
+  .card-title {
+    @apply text-lg font-semibold text-slate-800;
+  }
+
+  .body-text {
+    @apply text-base text-slate-600 leading-relaxed;
+  }
+
+  .label {
+    @apply text-xs font-medium uppercase tracking-wider text-slate-500;
+  }
+}
